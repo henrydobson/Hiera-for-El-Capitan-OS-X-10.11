@@ -9,11 +9,7 @@ script:
   - sudo make pkg
   - sudo installer -pkg hiera.pkg -target /
 before_deploy:
-  - git config --global user.email "builds@travis-ci.com"
-  - git config --global user.name "Travis CI"
-  - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$TAGPERM@github.com/RlonRyan/JBasicX --tags
+  - TRAVIS_TAG=`cat Makefile | grep PACKAGE_VERSION | cut -d= -f2`
 deploy:
   provider: releases
   api_key:
