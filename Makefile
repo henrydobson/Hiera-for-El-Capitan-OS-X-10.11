@@ -1,6 +1,6 @@
 USE_PKGBUILD=1
 include /usr/local/share/luggage/luggage.make
-PACKAGE_VERSION=1.3.7
+PACKAGE_VERSION=1.3.8
 TITLE=hiera
 PACKAGE_NAME=hiera
 REVERSE_DOMAIN=com.pebbleit
