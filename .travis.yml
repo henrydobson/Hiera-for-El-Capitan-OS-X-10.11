@@ -1,11 +1,10 @@
 os:
   - osx
 before_install:
-  - git clone https://github.com/henrydobson/luggage.git ~/henrydobson/luggage
-  - cd ~/henrydobson/luggage
+  - git clone https://github.com/henrydobson/luggage.git henrydobson/luggage
+  - cd henrydobson/luggage
   - make bootstrap_files
-  - cd ~
-  - cd henrydobson/OSX_Hiera
+  - cd ../..
 script:
   - sudo make pkg
   - sudo installer -pkg Desktop/hiera*.pkg -target /
