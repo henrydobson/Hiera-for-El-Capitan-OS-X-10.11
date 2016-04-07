@@ -1,0 +1,8 @@
+os: osx
+before_install:
+  - curl -O https://github.com/henrydobson/luggage.git
+  - cd luggage
+  - make bootstrap_files
+script:
+  - sudo make pkg
+  - sudo installer -pkg Desktop/hiera*.pkg -target /
