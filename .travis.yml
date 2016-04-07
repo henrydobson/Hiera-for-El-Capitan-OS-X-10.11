@@ -9,9 +9,10 @@ script:
   - sudo make pkg
   - sudo installer -pkg hiera.pkg -target /
 before_deploy:
-  - TRAVIS_TAG=`cat Makefile | grep PACKAGE_VERSION | cut -d= -f2`
+  - RELEASE_TAG=`cat Makefile | grep PACKAGE_VERSION | cut -d= -f2`
 deploy:
   provider: releases
+  release-number: ${RELEASE_TAG}
   api_key:
     secure: XTIEZ27RSl2Dwjc9P5A1hL6PkU7tibnv7YGoySckMSsx81WQjq5RjXF7R7J2Yy0c19oF/emY2YhizqmzyoGuhmMGiC0k1pCew+TViQGfo2e7nKAcleioB9WUQ3sF97jkBTU5j01kAWBX8VAH64RWnWS7jnfgXN8MMBYoGZD2Hy9j5MT/P2TwIKXmeIGD1NNPIKnGHjPLp3f9bdaIA2dh9xUxVSBl1/YodPDld0C43NC013Cb/LzMQQvlTKkTOgTaRG51nqyROIdF+FH1y0O1Ny4ATcmf1WAm4KsjEdVa8me2DokjTnQHOYXDqvdc4SPoq5Nrs2g9Bbou1v+eeY2Ll3cWYk5+p9XbCJtM1PLtg8jjcAx0c+5sWiSFDJOrSD1bZOCQ45ZEcJgier2tY7bbZJkLdiqMDNbaZV/DJmPj2dLar1MZPjeepPLM88bgi8oTjW+8KX6Jb0mWz5YOCSe3OQMdAZoBdlSfqy2yBHH+WJFy96aGqgRXFILVPcubRlD+o+YxkXG8/7IVMvu7Z5bK/wJWxqkVydatiICjERvV3SNCybQ4xdRPi6jz75ZRdjvASPHl9JZ69Cb12jLaBLgskNz5stzt5qy5woPGYFwz7I9LTuFt+Q4ehLIy2FdKOz33GgywZ+IPJpOo3tIiBMIxaAvijQbrRPp5U44N+gpwvBk=
   file: hiera.pkg
