@@ -7,4 +7,4 @@ before_install:
   - cd ../..
 script:
   - sudo make pkg
-  - sudo installer -pkg Desktop/hiera*.pkg -target /
+  - sudo installer -pkg hiera*.pkg -target /
