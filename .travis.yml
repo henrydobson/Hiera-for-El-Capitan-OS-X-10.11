@@ -1,10 +1,11 @@
 os:
   - osx
 before_install:
+  - ls -al
   - git clone https://github.com/henrydobson/luggage.git henrydobson/luggage
   - cd henrydobson/luggage
   - make bootstrap_files
   - cd ../..
 script:
   - sudo make pkg
-  - sudo installer -pkg hiera*.pkg -target /
+  - sudo installer -pkg hiera.pkg -target /
