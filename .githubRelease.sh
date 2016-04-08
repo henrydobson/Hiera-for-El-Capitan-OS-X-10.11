@@ -1,4 +1,5 @@
 #!/bin/bash
+
 export GITHUB_TOKEN=$GH_TOKEN
 VERSION=`cat Makefile | grep PACKAGE_VERSION | cut -d= -f2`
 RELEASE_TAG="v$VERSION"
