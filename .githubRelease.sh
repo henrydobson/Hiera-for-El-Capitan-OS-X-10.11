@@ -4,7 +4,7 @@ export GITHUB_TOKEN=$GH_TOKEN
 VERSION=`cat Makefile | grep PACKAGE_VERSION | cut -d= -f2`
 RELEASE_TAG="v$VERSION"
 
-git tag $RELEASE_TAG && git push --tags
+git tag $RELEASE_TAG && git push git@github.com:henrydobson/OSX_Hiera.git --tags
 
 /usr/local/gopath/bin/github-release release \
     --user henrydobson \
