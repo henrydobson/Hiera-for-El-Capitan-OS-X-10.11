@@ -6,8 +6,12 @@
 
 [![Install Package](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Install%20Package%20%3Aarrow_right%3A%3Adesktop_computer%3A)](https://buildkite.com/henry-dobson/hiera) Install Package
 
-[![Install Package](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Test%20hiera%20%3Amicroscope%3A)](https://buildkite.com/henry-dobson/hiera) Test Hiera
+[![Tests](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Test%20hiera%20%3Amicroscope%3A)](https://buildkite.com/henry-dobson/hiera) Test Hiera
 
-[![Install Package](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Upload%20Artifact%20%3Arocket%3A)](https://buildkite.com/henry-dobson/hiera) Upload Artifact
+[![Codesign](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Code%20Sign%20%3Alock_with_ink_pen%3A)](https://buildkite.com/henry-dobson/hiera) Code Sign
 
-[![Install Package](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Send%20GitHub%20Release%20%3Aoctocat%3A)](https://buildkite.com/henry-dobson/hiera) Send GitHub Release
+[![Codesign](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Code%20Sign%20%3Alock_with_ink_pen%3A)](https://buildkite.com/henry-dobson/hiera) Set Icon
+
+[![Artifact](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Set%20Icon%20%3Aframe_with_picture%3A)](https://buildkite.com/henry-dobson/hiera) Upload Artifact
+
+[![GH Release](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?step=Send%20GitHub%20Release%20%3Aoctocat%3A)](https://buildkite.com/henry-dobson/hiera) Send GitHub Release
