@@ -6,7 +6,6 @@ export GITHUB_TOKEN=$GITHUB_RELEASE_ACCESS_KEY
 VERSION=`cat Makefile | grep PACKAGE_VERSION | cut -d= -f2`
 RELEASE_TAG="v$VERSION"
 
-
 git tag $RELEASE_TAG && git push $GITHUB_REPO --tags
 
 /usr/local/gopath/bin/github-release release \
