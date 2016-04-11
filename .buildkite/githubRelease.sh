@@ -10,7 +10,7 @@ if [[ `git tag | grep $RELEASE_TAG` != $RELEASE_TAG ]]; then
   git tag $RELEASE_TAG
 fi
 
-git push OSX_Hiera --tags
+git push $GITHUB_REPO --tags
 
 /usr/local/gopath/bin/github-release release \
     -u henrydobson \
