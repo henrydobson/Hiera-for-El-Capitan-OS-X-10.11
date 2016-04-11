@@ -8,7 +8,8 @@ PAYLOAD=\
 	pack-hiera \
 	pack-gemHiera \
 	pack-rubyHiera \
-	pack-varHiera
+	pack-varHiera \
+	pack-script-postinstall
 
 pack-hiera: l_usr_local_bin
 	@sudo mkdir -p "${WORK_D}/usr/local/bin/"
