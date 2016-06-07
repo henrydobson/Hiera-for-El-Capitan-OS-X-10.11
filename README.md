@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/henrydobson/OSX_Hiera.png?label=ready&title=Ready)](https://waffle.io/henrydobson/OSX_Hiera)
 # OSX_Hiera 
 
 [![Install Luggage](https://badge.buildkite.com/212afbf05c8e448a427409bc0d46843b343aad4ea5e7619a34.svg?style=square?step=Install%20Luggage%20%3Abriefcase%3A)](https://buildkite.com/henry-dobson/hiera) Install prerequisites: Luggage
